@@ -56,6 +56,8 @@ function App() {
     }
     else if(array[2]!=="empty" && array[2]===array[4] && array[2]===array[6]){
       setWinMessage(array[2]+" Win")
+    }else if(!array.includes("empty")){
+      setWinMessage("Game Over")
     }
   }
 
